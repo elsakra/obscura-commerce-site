@@ -13,16 +13,16 @@
       
       <!-- Desktop Navigation -->
       <nav class="hidden md:flex items-center space-x-8">
-        <a href="/#brands" class="text-warm-gray hover:text-burgundy transition-colors font-medium">
+        <a href="/#brands" class="text-warm-gray hover:text-burgundy transition-colors font-medium nav-link" data-target="brands">
           Our Brands
         </a>
-        <a href="/#about" class="text-warm-gray hover:text-burgundy transition-colors font-medium">
+        <a href="/#about" class="text-warm-gray hover:text-burgundy transition-colors font-medium nav-link" data-target="about">
           About
         </a>
-        <a href="/#contact" class="text-warm-gray hover:text-burgundy transition-colors font-medium">
+        <a href="/#contact" class="text-warm-gray hover:text-burgundy transition-colors font-medium nav-link" data-target="contact">
           Contact
         </a>
-        <a href="/#contact" class="btn-primary text-sm">
+        <a href="/#contact" class="btn-primary text-sm nav-link" data-target="contact">
           Get Started
         </a>
       </nav>
@@ -38,16 +38,16 @@
     <!-- Mobile Navigation -->
     <nav id="mobile-menu" class="md:hidden hidden border-t border-gray-200 py-6">
       <div class="flex flex-col space-y-4">
-        <a href="/#brands" class="text-warm-gray hover:text-burgundy transition-colors font-medium">
+        <a href="/#brands" class="text-warm-gray hover:text-burgundy transition-colors font-medium nav-link" data-target="brands">
           Our Brands
         </a>
-        <a href="/#about" class="text-warm-gray hover:text-burgundy transition-colors font-medium">
+        <a href="/#about" class="text-warm-gray hover:text-burgundy transition-colors font-medium nav-link" data-target="about">
           About
         </a>
-        <a href="/#contact" class="text-warm-gray hover:text-burgundy transition-colors font-medium">
+        <a href="/#contact" class="text-warm-gray hover:text-burgundy transition-colors font-medium nav-link" data-target="contact">
           Contact
         </a>
-        <a href="/#contact" class="btn-primary text-sm inline-block w-fit">
+        <a href="/#contact" class="btn-primary text-sm inline-block w-fit nav-link" data-target="contact">
           Get Started
         </a>
       </div>
@@ -59,6 +59,7 @@
   const mobileMenuButton = document.getElementById('mobile-menu-button');
   const mobileMenu = document.getElementById('mobile-menu');
   const menuSpans = mobileMenuButton?.querySelectorAll('span');
+  const navLinks = document.querySelectorAll('.nav-link');
 
   mobileMenuButton?.addEventListener('click', () => {
     mobileMenu?.classList.toggle('hidden');
@@ -73,5 +74,25 @@
       menuSpans?.[1]?.classList.add('opacity-0');
       menuSpans?.[2]?.classList.add('-rotate-45', '-translate-y-2');
     }
+  });
+
+  // Handle navigation clicks
+  navLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+      const href = link.getAttribute('href');
+      const target = link.getAttribute('data-target');
+      
+      if (href?.startsWith('/#') && target) {
+        // Check if we're on the homepage
+        if (window.location.pathname === '/') {
+          e.preventDefault();
+          const element = document.getElementById(target);
+          if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+          }
+        }
+        // If not on homepage, let the link navigate normally to /#section
+      }
+    });
   });
 </script>

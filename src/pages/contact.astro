@@ -1,0 +1,31 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Contact from '../components/Contact.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout 
+  title="Contact Us - Obscura Commerce"
+  description="Get in touch with Obscura Commerce. Whether you're looking for exclusive LEGO® sets from Brickheads Toy Co. or rare international snacks from Snackhaus, we're here to help."
+>
+  <Header />
+  
+  <main class="min-h-screen">
+    <!-- Hero Section -->
+    <section class="bg-cream py-20">
+      <div class="container-custom text-center">
+        <h1 class="text-5xl md:text-6xl font-serif text-burgundy mb-6">
+          Let's Connect
+        </h1>
+        <p class="text-xl text-warm-gray max-w-3xl mx-auto">
+          Ready to discover something extraordinary? We're here to help you find those perfect collectibles and rare finds.
+        </p>
+      </div>
+    </section>
+    
+    <Contact />
+  </main>
+  
+  <Footer />
+</Layout>
