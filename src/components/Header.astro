@@ -1,0 +1,77 @@
+---
+---
+
+<header class="bg-white shadow-sm sticky top-0 z-50">
+  <div class="container-custom">
+    <div class="flex items-center justify-between py-6">
+      <!-- Logo -->
+      <div class="flex items-center">
+        <a href="/" class="text-3xl font-script text-burgundy hover:text-dark-green transition-colors">
+          obscura
+        </a>
+      </div>
+      
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex items-center space-x-8">
+        <a href="/#brands" class="text-warm-gray hover:text-burgundy transition-colors font-medium">
+          Our Brands
+        </a>
+        <a href="/#about" class="text-warm-gray hover:text-burgundy transition-colors font-medium">
+          About
+        </a>
+        <a href="/#contact" class="text-warm-gray hover:text-burgundy transition-colors font-medium">
+          Contact
+        </a>
+        <a href="/#contact" class="btn-primary text-sm">
+          Get Started
+        </a>
+      </nav>
+      
+      <!-- Mobile Menu Button -->
+      <button id="mobile-menu-button" class="md:hidden flex flex-col justify-center items-center w-8 h-8 space-y-1">
+        <span class="w-6 h-0.5 bg-burgundy transform transition-all duration-300"></span>
+        <span class="w-6 h-0.5 bg-burgundy transform transition-all duration-300"></span>
+        <span class="w-6 h-0.5 bg-burgundy transform transition-all duration-300"></span>
+      </button>
+    </div>
+    
+    <!-- Mobile Navigation -->
+    <nav id="mobile-menu" class="md:hidden hidden border-t border-gray-200 py-6">
+      <div class="flex flex-col space-y-4">
+        <a href="/#brands" class="text-warm-gray hover:text-burgundy transition-colors font-medium">
+          Our Brands
+        </a>
+        <a href="/#about" class="text-warm-gray hover:text-burgundy transition-colors font-medium">
+          About
+        </a>
+        <a href="/#contact" class="text-warm-gray hover:text-burgundy transition-colors font-medium">
+          Contact
+        </a>
+        <a href="/#contact" class="btn-primary text-sm inline-block w-fit">
+          Get Started
+        </a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<script>
+  const mobileMenuButton = document.getElementById('mobile-menu-button');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const menuSpans = mobileMenuButton?.querySelectorAll('span');
+
+  mobileMenuButton?.addEventListener('click', () => {
+    mobileMenu?.classList.toggle('hidden');
+    
+    // Animate hamburger to X
+    if (mobileMenu?.classList.contains('hidden')) {
+      menuSpans?.[0]?.classList.remove('rotate-45', 'translate-y-2');
+      menuSpans?.[1]?.classList.remove('opacity-0');
+      menuSpans?.[2]?.classList.remove('-rotate-45', '-translate-y-2');
+    } else {
+      menuSpans?.[0]?.classList.add('rotate-45', 'translate-y-2');
+      menuSpans?.[1]?.classList.add('opacity-0');
+      menuSpans?.[2]?.classList.add('-rotate-45', '-translate-y-2');
+    }
+  });
+</script>
