@@ -1,0 +1,145 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout 
+  title="Privacy Policy - Obscura Commerce"
+  description="Privacy Policy for Obscura Commerce - Learn how we collect, use, and protect your personal information."
+>
+  <Header />
+  
+  <main class="bg-white">
+    <div class="container-custom section-spacing">
+      <div class="max-w-4xl mx-auto">
+        <!-- Header -->
+        <div class="text-center mb-16">
+          <h1 class="text-5xl md:text-6xl font-serif text-burgundy mb-6">
+            Privacy Policy
+          </h1>
+          <p class="text-lg text-warm-gray">
+            Last updated: {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+          </p>
+        </div>
+        
+        <!-- Content -->
+        <div class="prose prose-lg max-w-none">
+          <div class="space-y-12">
+            
+            <section>
+              <h2 class="text-3xl font-serif text-burgundy mb-6">Introduction</h2>
+              <p class="text-warm-gray leading-relaxed mb-4">
+                At Obscura Commerce, we are committed to protecting your privacy and personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or engage with our brands, including Brickheads Toy Co. and Snackhaus.
+              </p>
+              <p class="text-warm-gray leading-relaxed">
+                By using our services, you agree to the collection and use of information in accordance with this policy.
+              </p>
+            </section>
+            
+            <section>
+              <h2 class="text-3xl font-serif text-burgundy mb-6">Information We Collect</h2>
+              
+              <h3 class="text-xl font-serif text-burgundy mb-4">Personal Information</h3>
+              <ul class="list-disc pl-6 space-y-2 text-warm-gray mb-6">
+                <li>Name and contact information (email address, phone number)</li>
+                <li>Shipping and billing addresses</li>
+                <li>Payment information (processed securely through third-party providers)</li>
+                <li>Communication preferences</li>
+                <li>Information you provide when contacting us</li>
+              </ul>
+              
+              <h3 class="text-xl font-serif text-burgundy mb-4">Usage Information</h3>
+              <ul class="list-disc pl-6 space-y-2 text-warm-gray">
+                <li>Website usage patterns and preferences</li>
+                <li>Device information and browser type</li>
+                <li>IP address and location data</li>
+                <li>Cookies and similar tracking technologies</li>
+              </ul>
+            </section>
+            
+            <section>
+              <h2 class="text-3xl font-serif text-burgundy mb-6">How We Use Your Information</h2>
+              <ul class="list-disc pl-6 space-y-2 text-warm-gray">
+                <li>Process and fulfill your orders</li>
+                <li>Provide customer service and support</li>
+                <li>Send you important updates about your orders</li>
+                <li>Improve our website and services</li>
+                <li>Send marketing communications (with your consent)</li>
+                <li>Comply with legal obligations</li>
+                <li>Detect and prevent fraud</li>
+              </ul>
+            </section>
+            
+            <section>
+              <h2 class="text-3xl font-serif text-burgundy mb-6">Information Sharing</h2>
+              <p class="text-warm-gray leading-relaxed mb-4">
+                We do not sell, trade, or otherwise transfer your personal information to third parties without your consent, except in the following circumstances:
+              </p>
+              <ul class="list-disc pl-6 space-y-2 text-warm-gray">
+                <li>Service providers who assist us in operating our business</li>
+                <li>Payment processors for transaction processing</li>
+                <li>Shipping companies for order fulfillment</li>
+                <li>Legal requirements or to protect our rights</li>
+                <li>Business transfers (mergers, acquisitions)</li>
+              </ul>
+            </section>
+            
+            <section>
+              <h2 class="text-3xl font-serif text-burgundy mb-6">Data Security</h2>
+              <p class="text-warm-gray leading-relaxed">
+                We implement appropriate technical and organizational security measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction. However, no method of transmission over the internet is 100% secure, and we cannot guarantee absolute security.
+              </p>
+            </section>
+            
+            <section>
+              <h2 class="text-3xl font-serif text-burgundy mb-6">Your Rights</h2>
+              <p class="text-warm-gray leading-relaxed mb-4">
+                Depending on your location, you may have the following rights:
+              </p>
+              <ul class="list-disc pl-6 space-y-2 text-warm-gray">
+                <li>Access to your personal information</li>
+                <li>Correction of inaccurate information</li>
+                <li>Deletion of your personal information</li>
+                <li>Restriction of processing</li>
+                <li>Data portability</li>
+                <li>Withdrawal of consent</li>
+              </ul>
+            </section>
+            
+            <section>
+              <h2 class="text-3xl font-serif text-burgundy mb-6">Cookies</h2>
+              <p class="text-warm-gray leading-relaxed">
+                Our website uses cookies to enhance your browsing experience, analyze site traffic, and personalize content. You can control cookie preferences through your browser settings, though disabling cookies may affect website functionality.
+              </p>
+            </section>
+            
+            <section>
+              <h2 class="text-3xl font-serif text-burgundy mb-6">Contact Us</h2>
+              <p class="text-warm-gray leading-relaxed mb-4">
+                If you have questions about this Privacy Policy or want to exercise your rights, please contact us:
+              </p>
+              <div class="bg-cream rounded-lg p-6">
+                <div class="space-y-3">
+                  <div class="flex items-center">
+                    <span class="text-forest-green mr-3">📧</span>
+                    <a href="mailto:privacy@obscuracommerce.com" class="text-forest-green hover:text-burgundy transition-colors">
+                      privacy@obscuracommerce.com
+                    </a>
+                  </div>
+                  <div class="flex items-center">
+                    <span class="text-forest-green mr-3">📞</span>
+                    <span class="text-warm-gray">+1 (555) OBSCURA</span>
+                  </div>
+                </div>
+              </div>
+            </section>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  <Footer />
+</Layout>

@@ -1,0 +1,215 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout 
+  title="Return Policy - Obscura Commerce"
+  description="Return Policy for Obscura Commerce - Learn about our return and exchange process for all brands including Brickheads Toy Co. and Snackhaus."
+>
+  <Header />
+  
+  <main class="bg-white">
+    <div class="container-custom section-spacing">
+      <div class="max-w-4xl mx-auto">
+        <!-- Header -->
+        <div class="text-center mb-16">
+          <h1 class="text-5xl md:text-6xl font-serif text-burgundy mb-6">
+            Return Policy
+          </h1>
+          <p class="text-lg text-warm-gray">
+            Last updated: {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+          </p>
+        </div>
+        
+        <!-- Content -->
+        <div class="prose prose-lg max-w-none">
+          <div class="space-y-12">
+            
+            <section>
+              <h2 class="text-3xl font-serif text-burgundy mb-6">Our Return Promise</h2>
+              <p class="text-warm-gray leading-relaxed mb-4">
+                At Obscura Commerce, we want you to be completely satisfied with your purchase from any of our brands, including Brickheads Toy Co. and Snackhaus. If you're not happy with your order, we're here to help with returns and exchanges.
+              </p>
+              <div class="bg-forest-green text-white rounded-lg p-6">
+                <h3 class="text-xl font-serif mb-3">Quick Summary</h3>
+                <ul class="space-y-2">
+                  <li>• 30-day return window for most items</li>
+                  <li>• Items must be in original condition</li>
+                  <li>• Free return shipping on defective items</li>
+                  <li>• Some restrictions apply to perishable goods</li>
+                </ul>
+              </div>
+            </section>
+            
+            <section>
+              <h2 class="text-3xl font-serif text-burgundy mb-6">Return Timeframe</h2>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-cream rounded-lg p-6">
+                  <h3 class="text-xl font-serif text-burgundy mb-4">Brickheads Toy Co.</h3>
+                  <p class="text-warm-gray mb-3"><strong>LEGO® Sets & Collectibles:</strong></p>
+                  <ul class="text-warm-gray space-y-1">
+                    <li>• Unopened: 30 days</li>
+                    <li>• Opened: 14 days</li>
+                    <li>• Defective: 60 days</li>
+                  </ul>
+                </div>
+                <div class="bg-cream rounded-lg p-6">
+                  <h3 class="text-xl font-serif text-burgundy mb-4">Snackhaus</h3>
+                  <p class="text-warm-gray mb-3"><strong>International Snacks:</strong></p>
+                  <ul class="text-warm-gray space-y-1">
+                    <li>• Unopened: 14 days</li>
+                    <li>• Damaged/Defective: 7 days</li>
+                    <li>• Expired on arrival: 30 days</li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+            
+            <section>
+              <h2 class="text-3xl font-serif text-burgundy mb-6">Return Conditions</h2>
+              
+              <h3 class="text-xl font-serif text-burgundy mb-4">Items Eligible for Return</h3>
+              <ul class="list-disc pl-6 space-y-2 text-warm-gray mb-6">
+                <li>Items in original packaging and condition</li>
+                <li>Unopened LEGO® sets with intact seals</li>
+                <li>Defective or damaged items</li>
+                <li>Items that don't match the description</li>
+                <li>Wrong items shipped</li>
+              </ul>
+              
+              <h3 class="text-xl font-serif text-burgundy mb-4">Items NOT Eligible for Return</h3>
+              <ul class="list-disc pl-6 space-y-2 text-warm-gray">
+                <li>Opened/consumed snack items (unless defective)</li>
+                <li>Custom or personalized items</li>
+                <li>Items past the return window</li>
+                <li>Items damaged by misuse</li>
+                <li>Gift cards or digital products</li>
+              </ul>
+            </section>
+            
+            <section>
+              <h2 class="text-3xl font-serif text-burgundy mb-6">How to Start a Return</h2>
+              
+              <div class="bg-cream rounded-lg p-8">
+                <h3 class="text-xl font-serif text-burgundy mb-6">Step-by-Step Process</h3>
+                
+                <div class="space-y-6">
+                  <div class="flex items-start">
+                    <span class="bg-forest-green text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-4 mt-1">1</span>
+                    <div>
+                      <h4 class="font-medium text-warm-gray mb-2">Contact Our Team</h4>
+                      <p class="text-warm-gray">Email us at <a href="mailto:returns@obscuracommerce.com" class="text-forest-green hover:text-burgundy transition-colors">returns@obscuracommerce.com</a> with your order number and reason for return.</p>
+                    </div>
+                  </div>
+                  
+                  <div class="flex items-start">
+                    <span class="bg-forest-green text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-4 mt-1">2</span>
+                    <div>
+                      <h4 class="font-medium text-warm-gray mb-2">Receive Return Authorization</h4>
+                      <p class="text-warm-gray">We'll review your request and provide a Return Authorization (RA) number and return instructions.</p>
+                    </div>
+                  </div>
+                  
+                  <div class="flex items-start">
+                    <span class="bg-forest-green text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-4 mt-1">3</span>
+                    <div>
+                      <h4 class="font-medium text-warm-gray mb-2">Package and Ship</h4>
+                      <p class="text-warm-gray">Securely package your items with the RA number and ship to our returns center using provided instructions.</p>
+                    </div>
+                  </div>
+                  
+                  <div class="flex items-start">
+                    <span class="bg-forest-green text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-4 mt-1">4</span>
+                    <div>
+                      <h4 class="font-medium text-warm-gray mb-2">Processing & Refund</h4>
+                      <p class="text-warm-gray">Once received, we'll inspect and process your return within 5-7 business days.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            
+            <section>
+              <h2 class="text-3xl font-serif text-burgundy mb-6">Refund Information</h2>
+              
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                  <h3 class="text-xl font-serif text-burgundy mb-4">Refund Methods</h3>
+                  <ul class="space-y-2 text-warm-gray">
+                    <li>• Original payment method (credit card, PayPal, etc.)</li>
+                    <li>• Store credit for exchanges</li>
+                    <li>• Gift card for special circumstances</li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 class="text-xl font-serif text-burgundy mb-4">Processing Times</h3>
+                  <ul class="space-y-2 text-warm-gray">
+                    <li>• Credit cards: 3-5 business days</li>
+                    <li>• PayPal: 1-2 business days</li>
+                    <li>• Store credit: Immediate</li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+            
+            <section>
+              <h2 class="text-3xl font-serif text-burgundy mb-6">Shipping & Costs</h2>
+              
+              <div class="space-y-6">
+                <div class="bg-green-50 border-l-4 border-forest-green p-6">
+                  <h3 class="text-lg font-serif text-forest-green mb-2">Free Return Shipping</h3>
+                  <p class="text-warm-gray">We provide prepaid return labels for defective, damaged, or incorrectly shipped items.</p>
+                </div>
+                
+                <div class="bg-yellow-50 border-l-4 border-yellow-500 p-6">
+                  <h3 class="text-lg font-serif text-yellow-700 mb-2">Customer Responsibility</h3>
+                  <p class="text-warm-gray">Return shipping costs for change of mind or buyer's remorse are the customer's responsibility.</p>
+                </div>
+              </div>
+            </section>
+            
+            <section>
+              <h2 class="text-3xl font-serif text-burgundy mb-6">International Returns</h2>
+              <p class="text-warm-gray leading-relaxed mb-4">
+                International customers are responsible for return shipping costs and any customs duties. We recommend using a trackable shipping method for international returns.
+              </p>
+              <p class="text-warm-gray leading-relaxed">
+                Please contact our team before shipping international returns to ensure proper processing.
+              </p>
+            </section>
+            
+            <section>
+              <h2 class="text-3xl font-serif text-burgundy mb-6">Contact Us</h2>
+              <p class="text-warm-gray leading-relaxed mb-4">
+                Have questions about returns or need assistance? We're here to help:
+              </p>
+              <div class="bg-cream rounded-lg p-6">
+                <div class="space-y-3">
+                  <div class="flex items-center">
+                    <span class="text-forest-green mr-3">📧</span>
+                    <a href="mailto:returns@obscuracommerce.com" class="text-forest-green hover:text-burgundy transition-colors">
+                      returns@obscuracommerce.com
+                    </a>
+                  </div>
+                  <div class="flex items-center">
+                    <span class="text-forest-green mr-3">📞</span>
+                    <span class="text-warm-gray">+1 (555) OBSCURA</span>
+                  </div>
+                  <div class="flex items-center">
+                    <span class="text-forest-green mr-3">⏰</span>
+                    <span class="text-warm-gray">Monday-Friday: 9AM-6PM ET</span>
+                  </div>
+                </div>
+              </div>
+            </section>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  <Footer />
+</Layout>
